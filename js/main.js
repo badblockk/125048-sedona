@@ -59,7 +59,7 @@ if (openClose) {
   // Range slider on hotels page
   $('.range-control').noUiSlider({
     start: [0, 3000],
-    orientation: "horizontal",
+    orientation: 'horizontal',
     connect: true,
     step: 1,
     range: {
@@ -71,8 +71,8 @@ if (openClose) {
     })
   });
 
-  $(".range-control").Link('lower').to($('#price-from'));
-  $(".range-control").Link('upper').to($('#price-to'));
+  $('.range-control').Link('lower').to($('#price-from'));
+  $('.range-control').Link('upper').to($('#price-to'));
 
   // Search form on the main page:
   $('#checkin').prop('readonly', true);
