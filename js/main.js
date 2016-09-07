@@ -1,23 +1,23 @@
-var openClose = document.querySelector(".hotel-search");
-var popup = document.querySelector(".modal-content");
+var openClose = document.querySelector('.hotel-search');
+var popup = document.querySelector('.modal-content');
 
 if (openClose) {
-  openClose.addEventListener("click", function(event) {
-    if (popup.classList.contains("modal-content-show")) {
+  openClose.addEventListener('click', function(event) {
+    if (popup.classList.contains('modal-content-show')) {
       event.preventDefault();
-      popup.classList.remove("modal-content-show");
+      popup.classList.remove('modal-content-show');
     } else {
       event.preventDefault();
-      popup.classList.add("modal-content-show");
+      popup.classList.add('modal-content-show');
     }
   })
 };
 
 if (openClose) {
-  window.addEventListener("keydown", function(event) {
+  window.addEventListener('keydown', function(event) {
     if (event.keyCode == 27) {
-      if (popup.classList.contains("modal-content-show")) {
-        popup.classList.remove("modal-content-show");
+      if (popup.classList.contains('modal-content-show')) {
+        popup.classList.remove('modal-content-show');
       }
     }
   })
